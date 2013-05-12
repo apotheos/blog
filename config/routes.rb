@@ -1,6 +1,8 @@
 Blog::Application.routes.draw do
   root :to => 'posts#index'
   resources :posts
+  match 'login' => 'application#login', :as => :login
+  match 'logout' => 'application#logout', :as => :logout
 
   # get "welcome/index"
 

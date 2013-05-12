@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+
+  before_filter :authenticate, :except => [:index, :show]
   respond_to :html, :json, :xml
 
   def index

@@ -1,19 +1,23 @@
 <article class="post">
     <header class="post-header">
         <h1 class="post-title"><%= post.title %></h1>
-        <%= button_to 'Edit',
-                      { :action => 'edit', :id => post.id },
-                      :method => :get,
-                      :class => 'edit-button' %>
-        <%= button_to 'Destroy',
-                      { :action => 'destroy', :id => post.id },
-                      :confirm => 'Are you sure?',
-                      :method => :delete,
-                      :class => 'destroy-button' %>
+            <div class="post-admin">
+            </div>
     </header>
     <div class="post-body">
         <p><%= raw markdown(post.text) %></p>
     </div>
-    <footer class="post-admin">
-    </footer>
+        <% if is_admin? %>
+            <footer class="post-admin">
+                <%= button_to 'Edit',
+                              { :action => 'edit', :id => post.id },
+                              :method => :get,
+                              :class => 'edit-button' %>
+                <%= button_to 'Destroy',
+                              { :action => 'destroy', :id => post.id },
+                              :confirm => 'Are you sure?',
+                              :method => :delete,
+                              :class => 'destroy-button' %>
+            </footer>
+        <% end %>
 </article>
