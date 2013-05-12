@@ -4,7 +4,8 @@ class PostsController < ApplicationController
   respond_to :html, :json, :xml
 
   def index
-    respond_with(@posts = Post.order('created_at DESC'))
+    num_posts = CONFIG['posts_per_page']
+    respond_with(@posts = Post.paginate(:page => params[:page], :per_page => 3 || num_posts).order('created_at DESC'))
   end
 
   def show

@@ -1,0 +1,18 @@
+@import 'globals.css.scss';
+
+.pagination {
+  overflow: auto;
+  margin-top: 20px;
+}
+.pagination .previous_page {
+  float: left;
+}
+.pagination a {
+  color: $grey-3;
+}
+.pagination .disabled {
+  color: $grey-1;
+}
+.pagination .next_page {
+  float: right;
+}

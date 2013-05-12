@@ -11,6 +11,7 @@ gem 'jquery-rails', '~> 2.1'
 gem 'redcarpet', '~> 2.2'
 gem 'pygments.rb', '~> 0.5'
 gem 'pygmentize'
+gem 'will_paginate', '~> 3.0'
 
 
 # Gems used only for assets and not required

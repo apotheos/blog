@@ -13,5 +13,6 @@
  *= require ./globals
  *= require ./typography
  *= require ./highlighting
+ *= require ./pagination
  */
 
