@@ -1,0 +1,15 @@
+@import "globals.css.scss";
+
+body {
+  background-color: $grey-0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header.site-header {
+  border-bottom: solid thick $grey-1;
+}
+
+h1.site-title {
+  margin-bottom: 0.25em;
+}

@@ -1,3 +1,25 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "globals.css.scss";
+
+article {
+  padding: 20px 10px;
+  border-bottom: solid 2.5px $grey-1;
+}
+
+article header h2 {
+  margin: 0px;
+  border-radius: 15px;
+  border-color: $grey-2;
+}
+
+header.post-header {
+  overflow: auto;
+}
+
+h2.post-title {
+  float: left;
+  //display: inline-block;
+}
+
+.post-body {
+  text-align: justify;
+}

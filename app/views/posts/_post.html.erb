@@ -1,0 +1,19 @@
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><%= post.title %></h2>
+        <%= button_to 'Edit',
+                      { :action => 'edit', :id => post.id },
+                      :method => :get,
+                      :class => 'edit-button' %>
+        <%= button_to 'Destroy',
+                      { :action => 'destroy', :id => post.id },
+                      :confirm => 'Are you sure?',
+                      :method => :delete,
+                      :class => 'destroy-button' %>
+    </header>
+    <div class="post-body">
+        <p><%= post.text %></p>
+    </div>
+    <footer class="post-admin">
+    </footer>
+</article>
