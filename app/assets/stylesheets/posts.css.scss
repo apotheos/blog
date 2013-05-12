@@ -2,24 +2,35 @@
 
 article {
   padding: 20px 10px;
-  border-bottom: solid 2.5px $grey-1;
+  //border-bottom: solid 2.5px $grey-1;
 }
 
-article header h2 {
+article header h1 {
   margin: 0px;
-  border-radius: 15px;
-  border-color: $grey-2;
+  max-width: 600px;
+  //border-radius: 15px;
+  //border-color: $grey-2;
 }
 
 header.post-header {
   overflow: auto;
+  background-color: $grey-1;
+  border-radius: 5px;
+  //border: solid 2px $grey-1;
+  padding: 5px;
 }
 
-h2.post-title {
+.post-title {
   float: left;
   //display: inline-block;
 }
 
 .post-body {
   text-align: justify;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

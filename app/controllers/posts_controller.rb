@@ -1,9 +1,8 @@
 class PostsController < ApplicationController
-
   respond_to :html, :json, :xml
 
   def index
-    respond_with(@posts = Post.all)
+    respond_with(@posts = Post.order('created_at DESC'))
   end
 
   def show

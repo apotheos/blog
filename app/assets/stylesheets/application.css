@@ -12,5 +12,6 @@
  *= require default
  *= require ./globals
  *= require ./typography
+ *= require ./highlighting
  */
 

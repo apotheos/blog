@@ -28,4 +28,10 @@ body {
   input.destroy-button {
     background-color: $red-deep;
   }
+  h1.post-title {
+    font-size: 1.8em;
+  }
+  .post-body h1 {
+    font-size: 1.7em;
+  }
 }

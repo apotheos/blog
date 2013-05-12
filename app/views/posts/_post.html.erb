@@ -1,6 +1,6 @@
 <article class="post">
     <header class="post-header">
-        <h2 class="post-title"><%= post.title %></h2>
+        <h1 class="post-title"><%= post.title %></h1>
         <%= button_to 'Edit',
                       { :action => 'edit', :id => post.id },
                       :method => :get,
@@ -12,7 +12,7 @@
                       :class => 'destroy-button' %>
     </header>
     <div class="post-body">
-        <p><%= post.text %></p>
+        <p><%= raw markdown(post.text) %></p>
     </div>
     <footer class="post-admin">
     </footer>
