@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def index
     num_posts = CONFIG['posts_per_page']
-    respond_with(@posts = Post.paginate(:page => params[:page], :per_page => 3 || num_posts).order('created_at DESC'))
+    respond_with(@posts = Post.paginate(:page => params[:page], :per_page => num_posts).order('created_at DESC'))
   end
 
   def show
